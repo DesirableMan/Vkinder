@@ -12,12 +12,12 @@ Created using Python, SQLAlchemy, PostgreSQL, VK API and PyCharm.
 
 ## Instruction manual
 
-1. Get a GroupToken from the site vk.com with access rights groups and APP_ID of the application.
+1. Get a groupToken from the site vk.com with access rights groups and user_token of the application.
 
-2. GroupToken is located in the settings of the VK group and is necessary for the bot to respond to messages sent to the group. APP_ID is required to allow the bot to authenticate the user using a token and to search for users by the specified parameters.
+2. groupToken is located in the settings of the VK group and is necessary for the bot to respond to messages sent to the group, user_token is required to allow the bot to authenticate the user using a token and to search for users by the specified parameters.
 
-3. The result will be recorded in the PostgreSQL database. The database will record information about the profile for which we are looking for a couple and all the people found. DB is the name of the data source for your PostgreSQL database (for example, postgresql://admin: admin@localhost: 5432/db).
+3. The result will be recorded in the PostgreSQL database. The database will record information about the profile for which we are looking for a couple and all the people found. DataBase is the name of the data source for your PostgreSQL database (for example, postgresql://admin: admin@localhost: 5432/db).
 
-4. The group_token, user_token and DB data are set in the file keys.py
+4. The group_token, user_token and DataBase data are set in the file keys.py
 
 5. The program is started using a file main.py
